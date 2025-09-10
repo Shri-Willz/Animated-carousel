@@ -68,14 +68,14 @@ const App: React.FC = () => {
   }
   
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center gap-8 p-6">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center gap-8 bg-gradient-to-br from-slate-900 via-black-900 to-slate-900 p-6">
       <Card className="relative w-full max-w-5xl shadow-2xl">
         <CardContent className="p-8">
           <div className="flex justify-between items-center gap-6">
             {imageOrder.map((image, index) => (
               <Card 
                 key={`slot-${index}`} 
-                className={`w-64 h-48 overflow-hidden border-0 shadow-xl transition-all duration-500 ease-out ${getSlotTransform(index)} ${getPop(index)}`}
+                className={`w-64 h-48 overflow-hidden border-0 shadow-xl transition-all duration-700 ease-out ${getSlotTransform(index)} ${getPop(index)}`}
               >
                 <CardContent className={`p-0 h-full `}>
                   <div className={`w-full h-full flex items-center justify-center text-2xl font-bold text-white`}>
